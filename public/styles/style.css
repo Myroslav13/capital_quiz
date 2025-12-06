@@ -1,0 +1,49 @@
+body {
+    background-image: url("/images/background.jpg");
+    color: white;
+    position: relative;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    color: black;
+    width: 25%;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {   
+    border-radius: 5px;
+    height: 25px;
+    border: 1px solid black;
+    padding-left: 7px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(194, 189, 189);
+    color: white;
+}
