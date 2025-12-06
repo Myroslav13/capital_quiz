@@ -12,6 +12,13 @@ h1 {
     width: 100%;
 }
 
+h2 {
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    left: 20px;
+}
+
 .container {
     display: flex;
     justify-content: center;

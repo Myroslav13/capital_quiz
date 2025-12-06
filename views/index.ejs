@@ -8,13 +8,21 @@
 </head>
 <body>
     <h1>Capital quiz</h1>
+    <h2>Score: <%=score%></h2>
 
     <div class="container">
         <form method="POST" action="/guess">
-            <label>What is the capital of <%=country%></label>
-            <input></input>
+            <label for="capital">What is the capital of <%=country%></label>
+            <input name="capital"></input>
             <input type="submit" value="Submit"></input>
         </form>
     </div>
+
+    <script>
+        var wasCorrect = "<%=wasCorrect%>";
+        if (wasCorrect === "false") {
+            alert('Game over! The right answer was: <%=prevCapital%>. Your score: <%= prevScore %>');
+        }
+    </script>
 </body>
 </html>
